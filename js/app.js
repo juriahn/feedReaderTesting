@@ -60,11 +60,6 @@ function init() {
                  title.html(feedName);   // Set the header text
                  container.empty();      // Empty out all previous entries
 
-                 /* Loop through the entries we just loaded via the Google
-                  * Feed Reader API. We'll then parse that entry against the
-                  * entryTemplate (created above using Handlebars) and append
-                  * the resulting HTML to the list of entries on the page.
-                  */
                  entries.forEach(function(entry) {
                      container.append(entryTemplate(entry));
                  });
